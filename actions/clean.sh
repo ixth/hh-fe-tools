@@ -9,5 +9,4 @@ git clean -dfx
 git co -f master
 git reset --hard origin/master
 yarn --non-interactive --force
-echo
-git log -n 1
+git show --no-patch --pretty='format:%C(auto)%n%h%d %s%nby %an <%ae> at %ad)%n'
