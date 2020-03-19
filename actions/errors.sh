@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-jq -C 'select(.lvl = "ERROR")' "$LOGS_PATH"
+jq -C 'select(.lvl == "ERROR")' "$LOGS_PATH"
