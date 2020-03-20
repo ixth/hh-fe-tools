@@ -10,5 +10,6 @@ for action in "$@"; do
         sh "$action_file"
     else
         echo "There's no such command: '$action'"
+        sh "$TOOLS_PATH/actions/help.sh"
     fi
 done
