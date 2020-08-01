@@ -7,7 +7,7 @@ export TOOLS_PATH="$HOME/.hh-fe-tools"
 for action in "$@"; do
     action_file="$TOOLS_PATH/actions/$action.sh"
     if [ -e "$action_file" ]; then
-        sh "$action_file"
+        sh -e "$action_file"
     else
         echo "There's no such command: '$action'"
         sh "$TOOLS_PATH/actions/help.sh"
