@@ -1,0 +1,4 @@
+#!/bin/bash
+
+alias fe='/home/hh/.hh-fe-tools/fe.sh'
+alias hhc='/opt/deploy-dev/secure/utils/hhc.py'
